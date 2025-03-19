@@ -1,18 +1,14 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Services from './components/Services/Services'
-import Gallery from './components/Gallery/Gallery'
-import Footer from './components/Footer/Footer'
+import LaunchTracker from './components/LaunchTracker'
+import Header from './components/Header'
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Services />
-      <Gallery />
-      <Footer />
+    <div className="min-h-screen">
+      <Header />
+      <main className="container mx-auto px-4 py-8">
+        <LaunchTracker />
+      </main>
     </div>
   )
 }
